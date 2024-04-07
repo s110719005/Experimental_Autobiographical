@@ -20,7 +20,7 @@ public class GameCore : MonoBehaviour
     
     public void StartNewGame()
     {
-        SceneManager.LoadScene("Stage0Scene");
+        SceneManager.LoadScene("Stage1Scene");
     }
 
     public void LeveSelect()
