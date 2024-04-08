@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,5 +39,10 @@ public class GameCore : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    internal void BackToTitle()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }

@@ -8,6 +8,13 @@ public class StageManager : MonoBehaviour
     private int currentStage;
     public virtual void NextScene()
     {
-        GameCore.Instance.ChangeStage(currentStage + 1);
+        if(currentStage + 1 >= 8)
+        {
+            GameCore.Instance.BackToTitle();
+        }
+        else
+        {
+            GameCore.Instance.ChangeStage(currentStage + 1);
+        }
     }
 }
