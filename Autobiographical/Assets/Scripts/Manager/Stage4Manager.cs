@@ -32,7 +32,6 @@ public class Stage4Manager : StageManager
 
     [SerializeField]
     private Image[] selections;
-    private int currentSelection = -1;
     private Coroutine questionCoroutine;
     void Start()
     {
