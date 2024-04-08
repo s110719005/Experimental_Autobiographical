@@ -56,6 +56,7 @@ public class Stage4Manager : StageManager
 
     private IEnumerator ExampleEnumerator()
     {
+        yield return new WaitForSeconds(2f);
         PlayPianoSound(5);
         questionImage.sprite = exampleText;
         questionImage.color = new Color(0, 0, 0, 1);
