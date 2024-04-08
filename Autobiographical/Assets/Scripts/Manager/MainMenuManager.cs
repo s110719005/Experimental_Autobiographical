@@ -15,6 +15,14 @@ public class MainMenuManager : MonoBehaviour
     private Sprite pianoSol;
     [SerializeField]
     private Sprite pianoLa;
+    [SerializeField]
+    private AudioSource audioSource;
+    [SerializeField]
+    private AudioClip faClip;
+    [SerializeField]
+    private AudioClip solClip;
+    [SerializeField]
+    private AudioClip laClip;
     
     public void LeaveSelect()
     {
@@ -24,15 +32,21 @@ public class MainMenuManager : MonoBehaviour
     public void SelectFa()
     {
         pianoBackground.sprite = pianoFa;
+        audioSource.clip = faClip;
+        audioSource.Play();
     }
 
     public void SelectSol()
     {
         pianoBackground.sprite = pianoSol;
+        audioSource.clip = solClip;
+        audioSource.Play();
     }
 
     public void SelectLa()
     {
         pianoBackground.sprite = pianoLa;
+        audioSource.clip = laClip;
+        audioSource.Play();
     }
 }
